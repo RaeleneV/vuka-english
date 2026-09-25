@@ -1,0 +1,611 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Make People Remember You — Vuka</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/vuka_styles_redesigned.css" />
+    <link rel="icon" href="images_global/favicon-sun-only.ico" />
+    <link rel="manifest" href="manifest.json" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header class="ribbon">
+      <div class="container ribbon-inner">
+        <a class="logo" href="index.html"
+          ><img
+            class="logo-img"
+            src="images_global/vuka-logo-white.png"
+            alt="Vuka logo"
+        /></a>
+        <nav class="nav-right" id="navRight" aria-label="Primary">
+          <ul class="nav-links">
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#modules">Modules</a></li>
+            <li><a href="index.html#faq">FAQ</a></li>
+          </ul>
+          <select class="lang-select" aria-label="Choose language">
+            <option>🌐 English</option>
+            <option disabled>isiZulu (coming soon)</option>
+            <option disabled>Afrikaans (coming soon)</option>
+          </select>
+        </nav>
+        <button
+          class="burger"
+          id="burgerBtn"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="navRight"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <div class="container">
+      <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <a href="index.html">Home</a> /
+        <span class="current">Make People Remember You</span>
+      </nav>
+    </div>
+
+    <main id="main">
+      <div class="container module-layout">
+        <nav class="topic-nav" aria-label="Module topics">
+          <h2>Topics</h2>
+          <ul>
+            <li>
+              <a class="topic-link" href="#MakePeopleRememberYou"
+                >Make People Remember You</a
+              >
+            </li>
+            <li>
+              <a class="topic-link" href="#WhatBrandingActuallyMeans"
+                >What Branding Actually Means (And Why Bother)</a
+              >
+            </li>
+            <li>
+              <a class="topic-link" href="#KnowWhoYoureReallyTalkingTo"
+                >Know Who You're Really Talking To</a
+              >
+            </li>
+            <li>
+              <a class="topic-link" href="#GiveYourBrandAVoiceAndAVibe"
+                >Give Your Brand a Voice and a Vibe</a
+              >
+            </li>
+            <li>
+              <a class="topic-link" href="#BuildALookPeopleRecognise"
+                >Build a Look People Recognise</a
+              >
+            </li>
+            <li>
+              <a class="topic-link" href="#References">References</a>
+            </li>
+          </ul>
+        </nav>
+
+        <article class="module-main">
+          <div class="module-header">
+            <div>
+              <p class="eyebrow">Journey 07</p>
+              <h1>Make People Remember You</h1>
+            </div>
+            <!-- <a class="btn btn-ghost btn-sm" href="index.html#modules">← Back</a> -->
+          </div>
+          <p class="module-why">
+            "Two stalls sell the same kota, at the same price, in the same
+            street. Why does one have a queue, and the other doesn't?" Branding
+            is how people see and remember your food business. It's built
+            through every item of food you sell, and every interaction you have
+            with customers, every single day.
+          </p>
+
+          <section class="topic-section" id="WhatBrandingActuallyMeans">
+            <h3>What Branding Actually Means (And Why Bother)</h3>
+            <p class="topic-summary">
+              ""Let me go buy amagwinya from that lady" or "let me go buy
+              amagwinya from [your business name]": which one turns a one-time
+              buyer into a regular?"
+            </p>
+            <div class="topic-body">
+              <p>
+                More than 80% of people say trust is a leading reason why they
+                buy, which is why branding matters no matter how big or small
+                your food business is (Cloudfusion, 2025). Good branding helps
+                people remember you, and people don't forget a business with the
+                same colours and packaging every time (Dandu, 2015). It also
+                builds trust: when customers see the same neat packaging and
+                name every time, they feel emotionally safe buying from you, and
+                with so many other people selling food, being memorable is what
+                makes people choose you over someone else. Branding matters for
+                your team too. It makes employees feel proud to be part of
+                something real and growing, not just doing a small job
+                (Cloudfusion, 2025).<br /><br />
+                💡 QUICK TIP Branding isn't a logo you design once and forget.
+                It's the sum of every small, repeated detail a customer
+                experiences.
+              </p>
+            </div>
+          </section>
+
+          <section class="topic-section reflection-section" id="reflection-brand-aware">
+            <div class="checklist-card">
+              <div class="checklist-intro">
+                <p class="eyebrow"> ✅ QUICK CHALLENGE</p>
+                <h2>Time to Reflect</h2>
+                <p class="lead">
+                  Write down what you want a customer to say about your business to a
+                  friend, in their own words. Complete this and earn: 🎨 "Brand Aware" badge
+                </p>
+              </div>
+              <div class="reflection-field">
+                <label for="brandAwareInput" class="reflection-label">Your answer</label>
+                <textarea id="brandAwareInput" class="reflection-textarea" rows="4" placeholder="e.g. The service and quality of the food is the best in town..."></textarea>
+              </div>
+              <div class="checklist-message" id="brandAwareMessage" role="status" aria-live="polite">
+                <span id="brandAwareMessageText"></span>
+              </div>
+              <div id="brandAwareBadgeSection" class="badge-section hidden">
+                <div class="badge">🎨 <strong>Brand Aware</strong> badge</div>
+              </div>
+            </div>
+          </section>
+
+          <section class="topic-section" id="KnowWhoYoureReallyTalkingTo">
+            <h3>Know Who You're Really Talking To</h3>
+            <p class="topic-summary">
+              "If your branding tried to please absolutely everyone, would
+              anyone actually remember it?"
+            </p>
+            <div class="topic-body">
+              <p>
+                Start by understanding who your audience is: the specific group
+                of people your food business serves, and the problem you're
+                solving for them. Your branding should connect with their
+                habits, likes, dislikes, and daily life. From there, build a
+                brand strategy, a plan for your long-term goals and how your
+                business will meet them. Two of its core elements are brand
+                purpose (why does your business exist, and what value does it
+                add to your audience's life? This becomes your mission
+                statement) and brand vision (where do you see your business in
+                the future? This shapes your long-term goals) (Yolisa Motha,
+                2021). <br /><br />
+                💡 QUICK TIP If you're not sure who your audience is, look at
+                who's already buying from you regularly, and build outward from
+                there. 
+                
+              </p>
+            </div>
+          </section>
+
+          <section class="topic-section reflection-section" id="reflection-strategy-starter">
+            <div class="checklist-card">
+              <div class="checklist-intro">
+                <p class="eyebrow"> ✅ QUICK CHALLENGE</p>
+                <h2>Purpose & Vision</h2>
+                <p class="lead">
+                  Answer in one sentence each: why does your business exist (purpose),
+                  and where do you see it in three years (vision)? Complete this and
+                  earn: 🎯 "Strategy Starter" badge
+                </p>
+              </div>
+              <div class="reflection-field">
+                <label for="strategyStarterInput" class="reflection-label">Your answer</label>
+                <textarea id="strategyStarterInput" class="reflection-textarea" rows="4" placeholder="e.g. I want to have a steady income so that I can provide for and take care of my family. I see my business thriving with me providing healthy and affordable meals for my community..."></textarea>
+              </div>
+              <div class="checklist-message" id="strategyStarterMessage" role="status" aria-live="polite">
+                <span id="strategyStarterMessageText"></span>
+              </div>
+              <div id="strategyStarterBadgeSection" class="badge-section hidden">
+                <div class="badge">🎯 <strong>Strategy Starter</strong> badge</div>
+              </div>
+            </div>
+          </section>
+
+          <section class="topic-section" id="GiveYourBrandAVoiceAndAVibe">
+            <h3>Give Your Brand a Voice and a Vibe</h3>
+            <p class="topic-summary">
+              "If your business could talk, would it crack a joke, or keep
+              things strictly formal?"
+            </p>
+            <div class="topic-body">
+              <p>
+                Your brand also needs a personality, to make it more human and
+                relatable. Think about how you want customers to see you:
+                personable or corporate, exciting or calm, modern or rooted in
+                tradition, playful or serious, accessible or premium. From that
+                personality comes your brand voice, how your brand speaks and
+                its tone, as if it were a real person talking to a customer.
+                Finally, your brand tagline is a short, memorable line that sums
+                all of this up in one breath (Yolisa Motha, 2021). <br /><br />
+                💡 QUICK TIP Say your tagline out loud to a friend or family
+                member. If they can repeat it back a minute later, it's
+                working.
+              
+              </p>
+            </div>
+          </section>
+
+          <section class="topic-section reflection-section" id="reflection-found-my-voice">
+            <div class="checklist-card">
+              <div class="checklist-intro">
+                <p class="eyebrow"> ✅ QUICK CHALLENGE</p>
+                <h2>My Tagline</h2>
+                <p class="lead">
+                  Write a one-line tagline for your business. Complete this and earn:
+                  🗣️ "Found My Voice" badge.
+                </p>
+              </div>
+              <div class="reflection-field">
+                <label for="foundVoiceInput" class="reflection-label">Your answer</label>
+                <textarea id="foundVoiceInput" class="reflection-textarea" rows="4" placeholder="e.g. 'The best in fresh, guaranteed.'..."></textarea>
+              </div>
+              <div class="checklist-message" id="foundVoiceMessage" role="status" aria-live="polite">
+                <span id="foundVoiceMessageText"></span>
+              </div>
+              <div id="foundVoiceBadgeSection" class="badge-section hidden">
+                <div class="badge">🗣️ <strong>Found My Voice</strong> badge</div>
+              </div>
+            </div>
+          </section>
+
+          <section class="topic-section" id="BuildALookPeopleRecognise">
+            <h3>Build a Look People Recognise</h3>
+            <p class="topic-summary">
+              "Could a customer spot your packaging in a crowd of ten other food
+              stalls, from across the taxi rank?"
+            </p>
+            <div class="topic-body">
+              <p>
+                Beyond strategy, you need a brand identity, the visual elements
+                that make up your brand. Your logo is the face of your business,
+                the symbol people recognise before they even read your name; a
+                good logo is simple, memorable, and affordable (some of the
+                world's biggest logos cost only a few hundred rand to design).
+                Even shapes carry meaning: round shapes feel warm and inviting,
+                squares and rectangles feel strong and reliable, vertical lines
+                feel bold, horizontal lines feel calm. Your colour palette
+                matters too, since colours trigger feelings: red creates an urge
+                to eat, green suggests fresh and healthy ingredients. Start with
+                one to three main colours, then build outward. Keep your
+                typography, the fonts you use, consistent everywhere your
+                business name appears, from your menu to your social media
+                (Yolisa Motha, 2021). <br /><br />
+                💡 QUICK TIP Consistency beats perfection. The same colours and
+                fonts used everywhere, even if simple, are more powerful than an
+                elaborate design used inconsistently. 
+               
+              </p>
+            </div>
+          </section>
+
+          <section class="topic-section reflection-section" id="reflection-look-locked-in">
+  <div class="checklist-card">
+    <div class="checklist-intro">
+      <p class="eyebrow"> ✅ QUICK CHALLENGE</p>
+      <h2>Brand Identity</h2>
+      <p class="lead">
+        Pick your main one or two brand colours, and check they appear on
+        your packaging, sign, and social media. Complete this and earn: 🖼️
+        "Look Locked In" badge
+      </p>
+    </div>
+
+    <div class="color-picker-field">
+      <div class="color-picker-item">
+        <label for="brandColorPrimary" class="reflection-label">Main colour</label>
+        <div class="color-picker-row">
+          <input type="color" id="brandColorPrimary" value="#319966" />
+          <span class="color-swatch-value" id="brandColorPrimaryValue">#319966</span>
+        </div>
+      </div>
+
+      <div class="color-picker-item">
+        <label for="brandColorSecondary" class="reflection-label">Second colour (optional)</label>
+        <div class="color-picker-row">
+          <input type="color" id="brandColorSecondary" value="#f09c3a" />
+          <span class="color-swatch-value" id="brandColorSecondaryValue">#f09c3a</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="checklist-message" id="lookLockedInMessage" role="status" aria-live="polite">
+      <span id="lookLockedInMessageText"></span>
+    </div>
+    <div id="lookLockedInBadgeSection" class="badge-section hidden">
+      <div class="badge">🖼️ <strong>Look Locked In</strong> badge</div>
+    </div>
+  </div>
+</section>
+
+<section class="topic-section" id="References">
+            <h3>References</h3>
+            <div class="faq-list">
+            <details class="faq-item" >
+              <summary style="color:#319966;">Sources for Fact-Checking: Legislation & Regulation</summary>
+              <p class="faq-answer">
+                <p>
+                Every legal fact in Journeys 3, 4, and 10 is drawn from current
+                South African legislation and regulator guidance:
+              </p>
+              <ul>
+                <li>
+                  Regulations Governing General Hygiene Requirements for Food
+                  Premises (R638 of 2018), under the Foodstuffs, Cosmetics and
+                  Disinfectants Act 54 of 1972 — enforced by municipal
+                  Environmental Health Departments.
+                </li>
+                <li>
+                  Regulations Relating to the Labelling and Advertising of
+                  Foodstuffs (R146), under the Foodstuffs, Cosmetics and
+                  Disinfectants Act 54 of 1972 — Department of Health.
+                </li>
+                <li>Businesses Act 71 of 1991 — gov.za.</li>
+                <li>
+                  Companies Act 71 of 2008 and Companies and Intellectual
+                  Property Commission (CIPC) — company registration, business
+                  structure conversion, and trade mark registration —
+                  cipc.co.za.
+                </li>
+                <li>
+                  National Regulator for Compulsory Specifications (NRCS), Food
+                  and Associated Industries division — canned, smoked, and
+                  vacuum-packed products — nrcs.org.za.
+                </li>
+                <li>
+                  South African Revenue Service (SARS), Small Businesses –
+                  Taxpayers, Tax Compliance Status system, and Budget 2026
+                  Frequently Asked Questions (VAT and Turnover Tax threshold
+                  changes effective 1 April 2026) — sars.gov.za.
+                </li>
+                <li>
+                  Unemployment Insurance Act 63 of 2001 and Unemployment
+                  Insurance Contributions Act 4 of 2002 — Department of
+                  Employment and Labour — labour.gov.za.
+                </li>
+                <li>
+                  Compensation for Occupational Injuries and Diseases Act 130 of
+                  1993 (COIDA) — Compensation Fund, Department of Employment and
+                  Labour — labour.gov.za.
+                </li>
+                <li>
+                  Basic Conditions of Employment Act 75 of 1997 — Department of
+                  Employment and Labour — labour.gov.za.
+                </li>
+                <li>
+                  National Environmental Management: Waste Act 59 of 2008 and
+                  Extended Producer Responsibility (EPR) Regulations (Government
+                  Notice R.1184, 2020) — Department of Forestry, Fisheries and
+                  the Environment — dffe.gov.za.
+                </li>
+                <li>
+                  Broad-Based Black Economic Empowerment Act 53 of 2003, and the
+                  Codes of Good Practice on B-BBEE (Exempted Micro-Enterprise
+                  thresholds) — dtic.gov.za.
+                </li>
+                <li>
+                  Protection of Personal Information Act 4 of 2013 (POPIA) —
+                  Information Regulator South Africa — inforegulator.org.za.
+                </li>
+                <li>
+                  Consumer Protection Act 68 of 2008 — online and distance sales
+                  provisions — gov.za.
+                </li>
+                <li>
+                  African Continental Free Trade Area (AfCFTA) — South African
+                  implementation guidance — dtic.gov.za.
+                </li>
+              </ul>
+              <p>
+                <i
+                  >Note: municipal fees, thresholds, and application processes
+                  vary by area and are periodically revised by government and
+                  regulators. Verify current requirements directly with the
+                  relevant municipality or regulator before publishing final
+                  figures in the app.</i
+                >
+              </p>
+              </p>
+            </details>
+              <details class="faq-item">
+              <summary style="color:#319966;">Sources & Further Reading: Business Practice, Marketing &
+              Financial Literacy</summary>
+              <p class="faq-answer">
+                 <p>
+                Branding and digital marketing facts in Journeys 6 and 7 draw on
+                the following:
+              </p>
+              <ul>
+                <li>
+                  Cloudfusion (2025). 7 Essential Reasons Why Branding Is
+                  Important for Business. Cloudfusion.co.za.
+                </li>
+                <li>
+                  Dandu, R. (2015). What Is Branding and Why Is It Important for
+                  Your Business? Brandingmag.
+                </li>
+                <li>
+                  Mercer, S. (2026). What to Post When You Have Nothing to Post:
+                  10 Content Ideas for Summerville Businesses. What's Up
+                  Summerville.
+                </li>
+                <li>
+                  Why food photography is important for your food business.
+                  candyfoxstudio.com.
+                </li>
+                <li>
+                  Yolisa Motha (2021). A Guide to Branding a Small Business.
+                  iKhokha.
+                </li>
+              </ul>
+              <p>
+                <i
+                  >Statistics on South African small business communication,
+                  time management, professionalism, networking, record-keeping,
+                  and banking (Journeys 1, 2, 8, and 9) are drawn from national
+                  small business research. Verify current figures against
+                  original sources before publishing final numbers in the
+                  app.</i
+                >
+              </p>
+
+              <p>
+                Growth-readiness, lending-risk, funding, and stock-management
+                facts in Journeys 1, 2, 5, and 9 draw on the following:
+              </p>
+              <ul>
+                <li>
+                  National Debt Advisors (2021). Stay away from unregistered
+                  money-lenders. nationaldebtadvisors.co.za.
+                </li>
+                <li>
+                  Startup Mag (2025). Scaling Signals: Ten Signs Your Small
+                  Business Is Ready to Grow. startupmag.co.za; Lula (2025). 5
+                  Signs Your Business is Ready for Growth Capital. lula.co.za.
+                </li>
+                <li>
+                  RegInsights (2024). Small Business Funding.
+                  regenesys.net/reginsights.
+                </li>
+                <li>
+                  Graduates24 (n.d.). NYDA Grant Programme Small Business
+                  Funding in South Africa. graduates24.com.
+                </li>
+                <li>
+                  Okhantu (2025). SEDFA Funding 2026: Requirements, Amounts &
+                  How to Apply. okhantu.co.za.
+                </li>
+                <li>
+                  Ready Accounting (2026). Inventory management tips for cost
+                  savings and efficiency. readyaccounting.co.za.
+                </li>
+                <li>
+                  Xtraspace (2024). Small Business Inventory Management in SA:
+                  10 Top Tips. xtraspace.co.za.
+                </li>
+              </ul>
+              </p>
+              </details>
+              <details class="faq-item">
+              <summary style="color:#319966;">Sources & Further Reading: The VUCA Concept</summary>
+              <p class="faq-answer">
+                <p>
+                The mission statement on the cover page draws on the following:
+              </p>
+              <ul>
+                <li>
+                  Bennett, N., & Lemoine, G. J. (2014). What VUCA Really Means
+                  for You. Harvard Business Review, 92(1/2), 27.
+                </li>
+              </ul>
+              </p>
+            </details>
+            </div>
+          </section>
+
+          <div class="module-footer-actions">
+            <a
+              class="btn btn-outline btn-sm module-download"
+              href="pdf/VukaJourney07.pdf"
+              target="_blank"
+              rel="noopener"
+            >
+              ⬇ Download / Print Module
+            </a>
+
+            <p class="module-download-note">
+              Opens a printable PDF. Save it for offline use or print it.
+            </p>
+          </div>
+
+          <div class="module-pager">
+            <a class="btn btn-outline" href="Journey6.html">
+              <span>
+                <span class="pager-label">← Previous journey 06</span>Let Your Phone Bring You Customers
+              </span>
+            </a>
+            <a class="btn btn-primary" href="Journey8.html">
+              <span>
+                <span class="pager-label">Next journey 08 →</span>Work Smarter
+              </span>
+            </a>
+          </div>
+        </article>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-main">
+          <!-- VUKA branding -->
+          <div class="footer-branding">
+            <img
+              class="footer-logo-vuka"
+              src="images_global/vuka-logo-white.png"
+              alt="VUKA"
+            />
+            <p class="footer-note">
+              Free skills for South Africa's food-sector entrepreneurs.
+            </p>
+          </div>
+
+          <!-- Quick links -->
+          <div class="footer-column">
+            <h3>Quick Links</h3>
+
+            <div class="footer-links">
+              <a href="pdf/VukaJourneys1-10.pdf">⬇ Download PDF Version</a>
+              <a href="team.html">Meet the Team</a>
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSeWoTinUkNsyFvYVqJk79LPJY2lL1nYslnXRa6ewYi_eWehkw/viewform?usp=publish-editor"
+                target="_blank"
+                rel="noopener"
+              >
+                Please Review Us
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Ubuntu Nexus credit -->
+        <div class="footer-bottom">
+          <div class="footer-creator">
+            <img
+              class="footer-logo-ubuntu"
+              src="images_global/UbuntuNexus_logo.jpeg"
+              alt="Ubuntu Nexus"
+            />
+            <div>
+              <p class="footer-credit-title">Created by Ubuntu Nexus</p>
+              <p class="footer-credit-note">Team 22</p>
+            </div>
+          </div>
+
+          <p class="footer-copyright">© 2026 VUKA. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+<script src="libs/jspdf.umd.min.js"></script>
+    <script src="libs/jspdf.plugin.autotable.min.js"></script>
+    <script src="js/main.js"></script>
+  
+  <script>
+  if ("serviceWorker" in navigator) {
+    window.addEventListener("load", () => {
+      navigator.serviceWorker.register("sw.js").catch((err) => {
+        console.warn("Service worker registration failed:", err);
+      });
+    });
+  }
+</script>
+  </body>
+</html>

@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Select Meal — Vuka</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../../css/vuka_styles_redesigned.css" />
+    <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="../../images_global/favicon-sun-only.ico" />
+  <link rel="manifest" href="manifest.json" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header class="ribbon">
+      <div class="container ribbon-inner">
+        <a class="logo" href="../../index.html">
+          <img class="logo-img" src="../../images_global/vuka-logo-white.png" alt="Vuka logo" />
+        </a>
+        <p class="calculator-page-title">Startup Capital Calculator</p>
+        <nav class="nav-right nav-right--compact" id="navRight" aria-label="Primary">
+          <ul class="nav-links">
+            <li><a href="../../index.html">Home</a></li>
+            <li><a href="../../index.html#about">About</a></li>
+            <li><a href="../../index.html#modules">Modules</a></li>
+            <li><a href="../../index.html#faq">FAQ</a></li>
+          </ul>
+          <select class="lang-select" aria-label="Choose language">
+            <option>🌐 English</option>
+            <option disabled>isiZulu (coming soon)</option>
+            <option disabled>Afrikaans (coming soon)</option>
+          </select>
+        </nav>
+
+        <a class="btn btn-ghost btn-sm header-back-btn" href="../../index.html">← Go back to Home Page</a>
+
+        <button
+          class="burger"
+          id="burgerBtn"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="navRight"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <main id="main">
+      <section class="hero">
+        <h1 id="categoryTitle"></h1>
+        <p>Select one to continue...</p>
+      </section>
+
+      <section class="progress-container">
+        <div class="step">
+          <span>1</span>
+          <p>Category</p>
+        </div>
+        <div class="line"></div>
+        <div class="step active">
+          <span>2</span>
+          <p>Meal/Beverages</p>
+        </div>
+        <div class="line"></div>
+        <div class="step">
+          <span>3</span>
+          <p>Calculator</p>
+        </div>
+      </section>
+
+      <section id="mealContainer" class="cards"></section>
+
+      <div class="button-section">
+        <button onclick="history.back()" class="btn btn-outline">← Back</button>
+        <button id="nextBtn" class="btn btn-primary" disabled>Next →</button>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-main">
+          <!-- VUKA branding -->
+          <div class="footer-branding">
+            <img
+              class="footer-logo-vuka"
+              src="../../images_global/vuka-logo-white.png"
+              alt="VUKA"
+            />
+            <p class="footer-note">
+              Free skills for South Africa's food-sector entrepreneurs.
+            </p>
+          </div>
+
+          <!-- Quick links -->
+          <div class="footer-column">
+            <h3>Quick Links</h3>
+             <div class="footer-links">
+              <a href="../../index.html">Home</a>
+              <a href="../../team.html">Meet the Team</a>
+              <a href="https://forms.google.com/" target="_blank" rel="noopener">Please Review Us</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Ubuntu Nexus credit -->
+        <div class="footer-bottom">
+          <div class="footer-creator">
+            <img
+              class="footer-logo-ubuntu"
+              src="../../images_global/UbuntuNexus_logo.jpeg"
+              alt="Ubuntu Nexus"
+            />
+            <div>
+              <p class="footer-credit-title">Created by Ubuntu Nexus</p>
+              <p class="footer-credit-note">Team 22</p>
+            </div>
+          </div>
+
+          <p class="footer-copyright">© 2026 VUKA. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="meals.js"></script>
+        <script>
+  if ("serviceWorker" in navigator) {
+    window.addEventListener("load", () => {
+      navigator.serviceWorker.register("../../sw.js").catch((err) => {
+        console.warn("Service worker registration failed:", err);
+      });
+    });
+  }
+</script>
+    <script>
+      /* Mobile nav toggle (same behaviour as main.js on the journey pages) */
+      (function () {
+        const burgerBtn = document.getElementById("burgerBtn");
+        const navRight = document.getElementById("navRight");
+        if (!burgerBtn || !navRight) return;
+        burgerBtn.addEventListener("click", () => {
+          const isOpen = navRight.classList.toggle("open");
+          burgerBtn.setAttribute("aria-expanded", String(isOpen));
+        });
+      })();
+    </script>
+  </body>
+</html>

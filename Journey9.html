@@ -1,0 +1,610 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Ready for Funding? — Vuka</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Sora:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/vuka_styles_redesigned.css" />
+    <link rel="icon" href="images_global/favicon-sun-only.ico" />
+    <link rel="manifest" href="manifest.json" />
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+
+    <header class="ribbon">
+      <div class="container ribbon-inner">
+        <a class="logo" href="index.html"
+          ><img
+            class="logo-img"
+            src="images_global/vuka-logo-white.png"
+            alt="Vuka logo"
+        /></a>
+        <nav class="nav-right" id="navRight" aria-label="Primary">
+          <ul class="nav-links">
+            <li><a href="index.html#about">About</a></li>
+            <li><a href="index.html#modules">Modules</a></li>
+            <li><a href="index.html#faq">FAQ</a></li>
+          </ul>
+          <select class="lang-select" aria-label="Choose language">
+            <option>🌐 English</option>
+            <option disabled>isiZulu (coming soon)</option>
+            <option disabled>Afrikaans (coming soon)</option>
+          </select>
+        </nav>
+        <button
+          class="burger"
+          id="burgerBtn"
+          aria-label="Open menu"
+          aria-expanded="false"
+          aria-controls="navRight"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <div class="container">
+      <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <a href="index.html">Home</a> /
+        <span class="current">Ready for Funding?</span>
+      </nav>
+    </div>
+
+    <main id="main">
+      <div class="container module-layout">
+        <nav class="topic-nav" aria-label="Module topics">
+          <h2>Topics</h2>
+          <ul>
+            <li>
+              <a class="topic-link" href="#ReadyForFunding"
+                >Ready for Funding?</a
+              >
+            </li>
+            <li>
+              <a class="topic-link" href="#FundingThatDoesntNeedCIPC"
+                >Funding That Doesn't Need CIPC</a
+              >
+            </li>
+            <li>
+              <a class="topic-link" href="#GetFundingReadyBeforeYouNeedIt"
+                >Get Funding-Ready Before You Need It</a
+              >
+            </li>
+              <li>
+              <a class="topic-link" href="#References"
+                >References</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <article class="module-main">
+          <div class="module-header">
+            <div>
+              <p class="eyebrow">Journey 09</p>
+              <h1>Ready for Funding?</h1>
+            </div>
+            <!-- <a class="btn btn-ghost btn-sm" href="index.html#modules">← Back</a> -->
+          </div>
+
+          <p class="module-why">
+            "You assumed you couldn't apply for funding because you're not
+            registered with CIPC. Is that actually true?" Many informal traders
+            assume funding isn't for them. In reality, several South African
+            funders specifically support informal and unregistered
+            micro-enterprises, including street traders and vendors.
+          </p>
+
+          <section class="topic-section" id="FundingThatDoesntNeedCIPC">
+            <h3>Funding That Doesn't Need CIPC</h3>
+            <p class="topic-summary">
+              "You assumed you couldn't apply for funding because you're not
+              registered. Is that actually true?"
+            </p>
+            <div class="topic-body">
+              <p>
+                The NYDA Grant Programme, run by the National Youth Development
+                Agency, specifically supports businesses operating informally or
+                formally, including street traders and vendors, as long as the
+                business has a profit motive and is commercially capable of
+                success. It's available to youth business owners aged 18 to 35,
+                and you can apply through any NYDA branch, online, or by calling
+                0800 58 58 58. The SEDFA Township and Rural Entrepreneurship
+                Programme, formed from the merger of SEFA, SEDA, and the CBDA,
+                specifically targets township and rural businesses and supports
+                formalising informal ones. Stokvels and savings groups aren't a
+                "formal" funder, but they're a trusted, community-based way for
+                many South African traders to access lump sums for stock or
+                equipment without high interest.<br /><br />
+                💡 QUICK TIP Funders that support informal traders often get
+                fewer applications than you'd expect. Not being registered yet
+                shouldn't stop you from asking.
+              </p>
+            </div>
+          </section>
+
+          <section class="topic-section reflection-section" id="find-your-funding-contact">
+            <div class="checklist-card">
+              <div class="checklist-intro">
+                <p class="eyebrow">✅ QUICK CHALLENGE</p>
+                <h2>Find Your Funding Contact</h2>
+                <p class="lead">
+                 Find one NYDA or SEDFA contact point you could
+                  use to ask about funding for an informal business.
+                  Complete this and earn: 💸 "Funding Aware" badge.
+                </p>
+              </div>
+ 
+              <div class="activity-instructions">
+                <h4>Learner instructions</h4>
+                <ol>
+                  <li>
+                    Choose one organisation:
+                    <ul>
+                      <li><strong>NYDA</strong>, if you are aged 18–35.</li>
+                      <li>
+                        <strong>SEDFA</strong>, if you operate or plan to
+                        operate a township or rural business.
+                      </li>
+                    </ul>
+                  </li>
+                  <li>
+                    Use the organisation's official website, phone number,
+                    WhatsApp line, or email to find a suitable contact point.
+                  </li>
+                  <li>Complete the short form below.</li>
+                </ol>
+              </div>
+ 
+              <form class="funding-contact-form" id="fundingContactForm" novalidate>
+                <div class="form-field">
+                  <label for="orgSelected">Organisation selected</label>
+                  <select id="orgSelected" required>
+                    <option value="">Select…</option>
+                    <option value="NYDA">NYDA</option>
+                    <option value="SEDFA">SEDFA</option>
+                  </select>
+                </div>
+
+                <div class="form-field">
+                  <label for="branchContact">Nearest branch, district office, or contact point</label>
+                  <input type="text" id="branchContact" placeholder="e.g. NYDA Tshwane branch" required />
+                </div>
+
+                <div class="form-field">
+                  <label for="townArea">Town or area</label>
+                  <input type="text" id="townArea" placeholder="e.g. Pretoria" required />
+                </div>
+
+                <div class="form-field">
+                  <label for="contactMethod">Contact method</label>
+                  <select id="contactMethod" required>
+                    <option value="">Select…</option>
+                    <option value="Phone">Phone</option>
+                    <option value="WhatsApp">WhatsApp</option>
+                    <option value="Email">Email</option>
+                    <option value="In-person visit">In-person visit</option>
+                  </select>
+                </div>
+
+                <div class="form-field">
+                  <label for="contactDetail">Phone number or email address</label>
+                  <input type="text" id="contactDetail" placeholder="e.g. 087 158 7991 or Tshwane@nyda.gov.za" required />
+                </div>
+
+                <div class="form-field">
+                  <label for="fundingQuestion">One question you would ask about funding</label>
+                  <textarea id="fundingQuestion" rows="3" placeholder='e.g. "Can an informal street-food business apply for the NYDA Grant Programme before registering with CIPC?"' required></textarea>
+                </div>
+
+                <button type="button" id="saveFundingContact" class="btn btn-primary btn-sm">
+                  Submit
+                </button>
+              </form>
+ 
+              <div class="checklist-message" id="fundingContactMessage" role="status" aria-live="polite">
+                <span id="fundingContactMessageText"></span>
+              </div>
+ 
+              <div
+                id="fundingContactBadgeSection"
+                class="badge-section hidden"
+              >
+                <div class="badge">
+                  💸 <strong>Funding Aware</strong> badge
+                </div>
+              </div>
+ 
+              <details class="faq-item example-answer">
+                <summary style="color: #319966">
+                  See an example completed answer
+                </summary>
+                <div class="faq-answer">
+                  <table class="example-table">
+                    <thead>
+                      <tr>
+                        <th>Information to find</th>
+                        <th>Example answer</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>Organisation selected</td>
+                        <td>NYDA</td>
+                      </tr>
+                      <tr>
+                        <td>
+                          Nearest branch, district office, or contact point
+                        </td>
+                        <td>NYDA Tshwane branch</td>
+                      </tr>
+                      <tr>
+                        <td>Town or area</td>
+                        <td>Pretoria</td>
+                      </tr>
+                      <tr>
+                        <td>Contact method</td>
+                        <td>Phone or email</td>
+                      </tr>
+                      <tr>
+                        <td>Phone number or email address</td>
+                        <td>087 158 7991 / Tshwane@nyda.gov.za</td>
+                      </tr>
+                      <tr>
+                        <td>One question you would ask about funding</td>
+                        <td>
+                          "Can an informal street-food business apply for
+                          the NYDA Grant Programme before registering with
+                          CIPC?"
+                        </td>
+                      </tr>
+                    </tbody>
+                  </table>
+                  <p>
+                    For a Pretoria-based learner, the NYDA lists its Tshwane
+                    branch at Middestad Mall, 252 Thabo Sehume Street, with
+                    the contact details shown above. NYDA's general
+                    customer-service line is 0800 58 58 58, and it also
+                    provides WhatsApp support at 064 758 5058.
+                  </p>
+                </div>
+              </details>
+            </div>
+          </section>
+
+          <section class="topic-section" id="GetFundingReadyBeforeYouNeedIt">
+            <h3>Get Funding-Ready Before You Need It</h3>
+            <p class="topic-summary">
+              "A funding opportunity opens tomorrow with a two-week deadline.
+              Could you apply in time?"
+            </p>
+            <div class="topic-body">
+              <p>
+                Start preparing now, before you actually apply. You'll typically
+                need your ID, proof of your trading history (this is exactly why
+                your notebook and bank account matter, they're the proof you can
+                show a funder), a simple description of what the funding will be
+                used for ("a second refrigerator to reduce spoilage," or "a bulk
+                stock discount for the festive season"), and, if it's a loan
+                rather than a grant, a basic idea of how you'll repay it.
+                <br /><br />
+                💡 QUICK TIP Prepare your documents in one folder, physical or
+                on your phone, before you need them, not while a deadline is
+                ticking. 
+              </p>
+            </div>
+          </section>
+
+          <section class="topic-section reflection-section" id="reflection-pitch-ready">
+            <div class="checklist-card">
+              <div class="checklist-intro">
+                <p class="eyebrow"> ✅ QUICK CHALLENGE</p>
+                <h2>Funding-Ready</h2>
+                <p class="lead">
+                  Write a few sentences on what you'd use funding for and how it would
+                  grow your income, the start of a simple funding pitch. Complete this
+                  and earn: 📋 "Pitch Ready" badge.
+                </p>
+              </div>
+              <div class="reflection-field">
+                <label for="pitchReadyInput" class="reflection-label">Your answer</label>
+                <textarea id="pitchReadyInput" class="reflection-textarea" rows="4" placeholder="e.g. The funding would help me buy more stock so that I can make food to serve more customers."></textarea>
+              </div>
+              <div class="checklist-message" id="pitchReadyMessage" role="status" aria-live="polite">
+                <span id="pitchReadyMessageText"></span>
+              </div>
+              <div id="pitchReadyBadgeSection" class="badge-section hidden">
+                <div class="badge"> 📋 <strong>Pitch Ready</strong> badge</div>
+              </div>
+            </div>
+          </section>
+
+
+<section class="topic-section" id="References">
+            <h3>References</h3>
+            <div class="faq-list">
+            <details class="faq-item" >
+              <summary style="color:#319966;">Sources for Fact-Checking: Legislation & Regulation</summary>
+              <p class="faq-answer">
+                <p>
+                Every legal fact in Journeys 3, 4, and 10 is drawn from current
+                South African legislation and regulator guidance:
+              </p>
+              <ul>
+                <li>
+                  Regulations Governing General Hygiene Requirements for Food
+                  Premises (R638 of 2018), under the Foodstuffs, Cosmetics and
+                  Disinfectants Act 54 of 1972 — enforced by municipal
+                  Environmental Health Departments.
+                </li>
+                <li>
+                  Regulations Relating to the Labelling and Advertising of
+                  Foodstuffs (R146), under the Foodstuffs, Cosmetics and
+                  Disinfectants Act 54 of 1972 — Department of Health.
+                </li>
+                <li>Businesses Act 71 of 1991 — gov.za.</li>
+                <li>
+                  Companies Act 71 of 2008 and Companies and Intellectual
+                  Property Commission (CIPC) — company registration, business
+                  structure conversion, and trade mark registration —
+                  cipc.co.za.
+                </li>
+                <li>
+                  National Regulator for Compulsory Specifications (NRCS), Food
+                  and Associated Industries division — canned, smoked, and
+                  vacuum-packed products — nrcs.org.za.
+                </li>
+                <li>
+                  South African Revenue Service (SARS), Small Businesses –
+                  Taxpayers, Tax Compliance Status system, and Budget 2026
+                  Frequently Asked Questions (VAT and Turnover Tax threshold
+                  changes effective 1 April 2026) — sars.gov.za.
+                </li>
+                <li>
+                  Unemployment Insurance Act 63 of 2001 and Unemployment
+                  Insurance Contributions Act 4 of 2002 — Department of
+                  Employment and Labour — labour.gov.za.
+                </li>
+                <li>
+                  Compensation for Occupational Injuries and Diseases Act 130 of
+                  1993 (COIDA) — Compensation Fund, Department of Employment and
+                  Labour — labour.gov.za.
+                </li>
+                <li>
+                  Basic Conditions of Employment Act 75 of 1997 — Department of
+                  Employment and Labour — labour.gov.za.
+                </li>
+                <li>
+                  National Environmental Management: Waste Act 59 of 2008 and
+                  Extended Producer Responsibility (EPR) Regulations (Government
+                  Notice R.1184, 2020) — Department of Forestry, Fisheries and
+                  the Environment — dffe.gov.za.
+                </li>
+                <li>
+                  Broad-Based Black Economic Empowerment Act 53 of 2003, and the
+                  Codes of Good Practice on B-BBEE (Exempted Micro-Enterprise
+                  thresholds) — dtic.gov.za.
+                </li>
+                <li>
+                  Protection of Personal Information Act 4 of 2013 (POPIA) —
+                  Information Regulator South Africa — inforegulator.org.za.
+                </li>
+                <li>
+                  Consumer Protection Act 68 of 2008 — online and distance sales
+                  provisions — gov.za.
+                </li>
+                <li>
+                  African Continental Free Trade Area (AfCFTA) — South African
+                  implementation guidance — dtic.gov.za.
+                </li>
+              </ul>
+              <p>
+                <i
+                  >Note: municipal fees, thresholds, and application processes
+                  vary by area and are periodically revised by government and
+                  regulators. Verify current requirements directly with the
+                  relevant municipality or regulator before publishing final
+                  figures in the app.</i
+                >
+              </p>
+              </p>
+            </details>
+              <details class="faq-item">
+              <summary style="color:#319966;">Sources & Further Reading: Business Practice, Marketing &
+              Financial Literacy</summary>
+              <p class="faq-answer">
+                 <p>
+                Branding and digital marketing facts in Journeys 6 and 7 draw on
+                the following:
+              </p>
+              <ul>
+                <li>
+                  Cloudfusion (2025). 7 Essential Reasons Why Branding Is
+                  Important for Business. Cloudfusion.co.za.
+                </li>
+                <li>
+                  Dandu, R. (2015). What Is Branding and Why Is It Important for
+                  Your Business? Brandingmag.
+                </li>
+                <li>
+                  Mercer, S. (2026). What to Post When You Have Nothing to Post:
+                  10 Content Ideas for Summerville Businesses. What's Up
+                  Summerville.
+                </li>
+                <li>
+                  Why food photography is important for your food business.
+                  candyfoxstudio.com.
+                </li>
+                <li>
+                  Yolisa Motha (2021). A Guide to Branding a Small Business.
+                  iKhokha.
+                </li>
+              </ul>
+              <p>
+                <i
+                  >Statistics on South African small business communication,
+                  time management, professionalism, networking, record-keeping,
+                  and banking (Journeys 1, 2, 8, and 9) are drawn from national
+                  small business research. Verify current figures against
+                  original sources before publishing final numbers in the
+                  app.</i
+                >
+              </p>
+
+              <p>
+                Growth-readiness, lending-risk, funding, and stock-management
+                facts in Journeys 1, 2, 5, and 9 draw on the following:
+              </p>
+              <ul>
+                <li>
+                  National Debt Advisors (2021). Stay away from unregistered
+                  money-lenders. nationaldebtadvisors.co.za.
+                </li>
+                <li>
+                  Startup Mag (2025). Scaling Signals: Ten Signs Your Small
+                  Business Is Ready to Grow. startupmag.co.za; Lula (2025). 5
+                  Signs Your Business is Ready for Growth Capital. lula.co.za.
+                </li>
+                <li>
+                  RegInsights (2024). Small Business Funding.
+                  regenesys.net/reginsights.
+                </li>
+                <li>
+                  Graduates24 (n.d.). NYDA Grant Programme Small Business
+                  Funding in South Africa. graduates24.com.
+                </li>
+                <li>
+                  Okhantu (2025). SEDFA Funding 2026: Requirements, Amounts &
+                  How to Apply. okhantu.co.za.
+                </li>
+                <li>
+                  Ready Accounting (2026). Inventory management tips for cost
+                  savings and efficiency. readyaccounting.co.za.
+                </li>
+                <li>
+                  Xtraspace (2024). Small Business Inventory Management in SA:
+                  10 Top Tips. xtraspace.co.za.
+                </li>
+              </ul>
+              </p>
+              </details>
+              <details class="faq-item">
+              <summary style="color:#319966;">Sources & Further Reading: The VUCA Concept</summary>
+              <p class="faq-answer">
+                <p>
+                The mission statement on the cover page draws on the following:
+              </p>
+              <ul>
+                <li>
+                  Bennett, N., & Lemoine, G. J. (2014). What VUCA Really Means
+                  for You. Harvard Business Review, 92(1/2), 27.
+                </li>
+              </ul>
+              </p>
+            </details>
+            </div>
+          </section>
+          <div class="module-footer-actions">
+            <a
+              class="btn btn-outline btn-sm module-download"
+              href="pdf/VukaJourney09.pdf"
+              target="_blank"
+              rel="noopener"
+            >
+              ⬇ Download / Print Module
+            </a>
+
+            <p class="module-download-note">
+              Opens a printable PDF. Save it for offline use or print it.
+            </p>
+          </div>
+
+          <div class="module-pager">
+            <a class="btn btn-outline" href="Journey8.html">
+              <span>
+                <span class="pager-label">← Previous journey 08</span>Work Smarter
+              </span>
+            </a>
+            <a class="btn btn-primary" href="Journey10.html">
+              <span>
+                <span class="pager-label">Next journey 10 →</span>What's Your Next Move?
+              </span>
+            </a>
+          </div>
+        </article>
+      </div>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container">
+        <div class="footer-main">
+          <!-- VUKA branding -->
+          <div class="footer-branding">
+            <img
+              class="footer-logo-vuka"
+              src="images_global/vuka-logo-white.png"
+              alt="VUKA"
+            />
+            <p class="footer-note">
+              Free skills for South Africa's food-sector entrepreneurs.
+            </p>
+          </div>
+
+          <!-- Quick links -->
+          <div class="footer-column">
+            <h3>Quick Links</h3>
+
+            <div class="footer-links">
+              <a href="pdf/VukaJourneys1-10.pdf">⬇ Download PDF Version</a>
+              <a href="team.html">Meet the Team</a>
+              <a
+                href="https://docs.google.com/forms/d/e/1FAIpQLSeWoTinUkNsyFvYVqJk79LPJY2lL1nYslnXRa6ewYi_eWehkw/viewform?usp=publish-editor"
+                target="_blank"
+                rel="noopener"
+              >
+                Please Review Us
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Ubuntu Nexus credit -->
+        <div class="footer-bottom">
+          <div class="footer-creator">
+            <img
+              class="footer-logo-ubuntu"
+              src="images_global/UbuntuNexus_logo.jpeg"
+              alt="Ubuntu Nexus"
+            />
+            <div>
+              <p class="footer-credit-title">Created by Ubuntu Nexus</p>
+              <p class="footer-credit-note">Team 22</p>
+            </div>
+          </div>
+
+          <p class="footer-copyright">© 2026 VUKA. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+<script src="libs/jspdf.umd.min.js"></script>
+    <script src="libs/jspdf.plugin.autotable.min.js"></script>
+    <script src="js/main.js"></script>
+  
+    <script>
+  if ("serviceWorker" in navigator) {
+    window.addEventListener("load", () => {
+      navigator.serviceWorker.register("sw.js").catch((err) => {
+        console.warn("Service worker registration failed:", err);
+      });
+    });
+  }
+    </script>
+  </body>
+</html>
