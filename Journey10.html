@@ -31,10 +31,14 @@
             <li><a href="index.html#modules">Modules</a></li>
             <li><a href="index.html#faq">FAQ</a></li>
           </ul>
-          <select class="lang-select" aria-label="Choose language">
-           <option selected>🌐 English</option>
-            <option disabled> 🌐 isiZulu (coming soon)</option>
-            <option value="https://vuka22-afrikaans.netlify.app"> 🌐 Afrikaans</option>
+           <select
+            class="lang-select"
+            aria-label="Choose Language"
+            onchange="if (this.value) window.location.href = this.value;"
+          >
+            <option value="" selected>🌐 English</option>
+            <option disabled>🌐 isiZulu (binnekort beskikbaar)</option>
+            <option value="https://vuka22-afrikaans.netlify.app">🌐 Afrikaans</option> 
           </select>
         </nav>
         <button

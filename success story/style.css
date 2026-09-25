@@ -288,7 +288,7 @@ header {
 }
 
 .article-carousel::before {
-    content: "IZIKO AFRICAN CUISINE";
+    content: "IZIKO AFRICAN CUIZINE";
 
     display: block;
 
@@ -482,9 +482,8 @@ strong {
    Base + mobile (max-width: 640px) rules live in ../css/vuka_styles_redesigned.css.
    -------------------------------------------------------------------------- */
 
-/* desktop: home links + language picker only appear inside the burger menu */
-.nav-right--compact .nav-links,
-.nav-right--compact .lang-select {
+/* desktop: home links only appear inside the burger menu */
+.nav-right--compact .nav-links {
   display: none;
 }
 

@@ -510,6 +510,8 @@ input{
     margin-top: 20px;
 }
 
+
+
 #downloadList {
     background: var(--blue);
     color: white;
@@ -797,7 +799,7 @@ input{
    Header / burger menu
    The burger's base + mobile (max-width: 640px) rules live in
    ../../css/vuka_styles_redesigned.css. Do NOT set .burger { display } here:
-   this file loads later and would hide the button on mobile.
+   this file loads later and would hide the button on mobile again.
    -------------------------------------------------------------------------- */
 
 /* the global `button:hover` rule above would otherwise tint the burger */
@@ -805,9 +807,8 @@ input{
   background: transparent;
 }
 
-/* desktop: home links + language picker only appear inside the burger menu */
-.nav-right--compact .nav-links,
-.nav-right--compact .lang-select {
+/* desktop: home links only appear inside the burger menu */
+.nav-right--compact .nav-links {
   display: none;
 }
 
